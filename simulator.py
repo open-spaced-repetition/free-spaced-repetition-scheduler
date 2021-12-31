@@ -76,6 +76,14 @@ if __name__ == "__main__":
 
     feature_list = ['D_t', 'S_t', 'R_t', 'D_p', 'S_p', 'R_p', 'Ivl', 'Due', 'Last', 'Lapses', 'Reps', 'IvlHistory',
                     'GradeHistory']
+    '''
+    D 难度，S 稳定性，R 可提取性
+    Ivl 间隔，Due 复习日期，Last 上次复习日期
+    Lapses 累计遗忘次数，Reps 连续记住次数
+    IvlHistory 间隔历史，GradeHistory 评分历史
+    _t 结尾表示理论值、真实值
+    _p 结尾表示预测值
+    '''
     card_map = {
         'D_t': 0, 'S_t': 1, 'R_t': 2, 'D_p': 3, 'S_p': 4, 'R_p': 5, 'Ivl': 6, 'Due': 7, 'Last': 8, 'Lapses': 9,
         'Reps': 10, 'IvlHistory': 11, 'GradeHistory': 12
@@ -120,11 +128,11 @@ if __name__ == "__main__":
     total_review = 0
 
     for day in tqdm(range(learn_days)):
-        df_card["Ivl"] = day - df_card["Last"]
-        df_card["R_t"] = np.exp(np.log(0.9) * df_card["Ivl"] / df_card["S_t"])
-        df_card["R_p"] = np.exp(np.log(0.9) * df_card["Ivl"] / df_card["S_p"])
+        df_card["Ivl"] = day - df_card["Last"]  # 计算所有卡片离上次复习过去了几天
+        df_card["R_t"] = np.exp(np.log(0.9) * df_card["Ivl"] / df_card["S_t"])  # 计算理论可提取性
+        df_card["R_p"] = np.exp(np.log(0.9) * df_card["Ivl"] / df_card["S_p"])  # 计算预测可提取性
 
-        need_review = df_card[df_card['Due'] <= day].sort_values(by='R_p')
+        need_review = df_card[df_card['Due'] <= day].sort_values(by='R_p')  # 筛选到期卡片，按可提取性性从小到大排序
         true_review = need_review.index[:review_limit]
         reviewed = len(true_review)
         for idx in true_review:
@@ -139,22 +147,23 @@ if __name__ == "__main__":
             Lapses = df_card.iat[idx, card_map['Lapses']]
             Grade = 0
             grade_seed = random.random()
-            if grade_seed < R_t:
+            if grade_seed < R_t:  # 记住
                 if grade_seed < R_t ** 10:
-                    Grade = 2
+                    Grade = 2  # 简单
                 else:
-                    Grade = 1
+                    Grade = 1  # 一般
 
-                if Reps > 1:
+                if Reps > 1:  # 记录可提取性实际值和预测值的误差
                     total_diff += 1 - R_p
                     total_case += 1
 
-                df_card.iat[idx, card_map['D_p']] = min(max(D_p + R_p - Grade + 0.2, 1), 10)
+                df_card.iat[idx, card_map['D_p']] = min(max(D_p + R_p - Grade + 0.2, 1), 10)  # 更新预测难度
                 df_card.iat[idx, card_map['S_t']] = update_stability_t(D_t, S_t, R_t)
 
-                df_card.iat[idx, card_map['S_p']] = update_stability_p(df_card.iat[idx, card_map['D_p']], S_p, R_p)
+                df_card.iat[idx, card_map['S_p']] = update_stability_p(df_card.iat[idx, card_map['D_p']], S_p,
+                                                                       R_p)  # 更新预测稳定性
                 df_card.iat[idx, card_map['Reps']] += 1
-            else:
+            else:  # 忘记
                 Grade = 0
 
                 if Reps > 1:
@@ -162,9 +171,9 @@ if __name__ == "__main__":
                     total_case += 1
 
                 df_card.iat[idx, card_map['D_p']] = min(max(D_p + R_p - Grade + 0.2, 1), 10)
-                df_card.iat[idx, card_map['S_t']] = difficulty2stability(D_t)
+                df_card.iat[idx, card_map['S_t']] = difficulty2stability(D_t)  # 重置稳定性
 
-                df_card.iat[idx, card_map['S_p']] = S_p_default * np.exp(-0.3 * (Lapses + 1))
+                df_card.iat[idx, card_map['S_p']] = S_p_default * np.exp(-0.3 * (Lapses + 1))  # 更新预测稳定性
                 df_card.iat[idx, card_map['Lapses']] = Lapses + 1
                 df_card.iat[idx, card_map['Reps']] = 1
 
@@ -177,16 +186,16 @@ if __name__ == "__main__":
             if Reps == 1:
                 df_log = df_log.append({'Lapses': Lapses, 'Ivl': Ivl, 'Grade': Grade}, ignore_index=True)
 
-        S_p_default = cal_stability_p_default(df_log, S_p_default)
+        S_p_default = cal_stability_p_default(df_log, S_p_default)  # 自适应初始稳定性
 
-        if total_case > 100:
+        if total_case > 100:  # 自适应初始难度
             D_p_default = 1 / np.power(total_review, 0.3) * np.power(
                 np.log(request_recall) / np.log(request_recall + total_diff / total_case),
                 1 / pred_difficulty_decay) * 5 + (1 - 1 / np.power(total_review, 0.3)) * D_p_default
             total_diff = 0
             total_case = 0
 
-        need_learn = df_card[(df_card['Reps'] == 0) & (df_card['Lapses'] == 0)]
+        need_learn = df_card[(df_card['Reps'] == 0) & (df_card['Lapses'] == 0)]  # 学习新卡片
         true_learn = need_learn.index[:min(learn_limit, card_per_day_limit - len(true_review))]
         learned = len(true_learn)
         for idx in true_learn:
