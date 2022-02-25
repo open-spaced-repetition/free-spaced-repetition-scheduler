@@ -1,0 +1,26 @@
+{
+    "name": "fsrs.js",
+    "version": "0.0.1",
+    "description": "FSRS (free spaced repetition scheduler) algorithm, based on the DSR model proposed by Piotr Wozniak, author of SuperMemo",
+    "main": "fsrs.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/open-spaced-repetition/fsrs.js.git"
+    },
+    "keywords": [
+        "SuperMemo",
+        "Anki"
+    ],
+    "author": "open-spaced-repetition",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/open-spaced-repetition/fsrs.js/issues"
+    },
+    "homepage": "https://github.com/open-spaced-repetition/fsrs.js#readme",
+    "publishConfig": {
+        "access": "public"
+    }
+}
