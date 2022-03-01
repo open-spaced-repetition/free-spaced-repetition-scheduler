@@ -26,7 +26,7 @@
             cardData.difficulty = globalData.defaultDifficulty;
             cardData.stability = globalData.defaultStability;
             cardData.retrievability = 1;
-            cardData.grade = "-1";
+            cardData.grade = -1;
             cardData.review = new Date().toISOString();
             cardData.reps = 1;
             cardData.lapses = 0;
