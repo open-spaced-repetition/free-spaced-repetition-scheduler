@@ -5,7 +5,7 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 plt.style.use('seaborn-whitegrid')
-plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['font.sans-serif'] = ['SimHei', 'Arial Unicode MS']
 plt.rcParams['axes.unicode_minus'] = False
 
 theory_difficulty_decay = -0.7
@@ -184,7 +184,7 @@ if __name__ == "__main__":
                 request_recall) / np.log(0.9))
 
             if Reps == 1:
-                df_log = df_log.append({'Lapses': Lapses, 'Ivl': Ivl, 'Grade': Grade}, ignore_index=True)
+                df_log = pd.concat([df_log, pd.DataFrame.from_records([{'Lapses': Lapses, 'Ivl': Ivl, 'Grade': Grade}])])
 
         S_p_default = cal_stability_p_default(df_log, S_p_default)  # 自适应初始稳定性
 
