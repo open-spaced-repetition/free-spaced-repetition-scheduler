@@ -96,8 +96,8 @@
             // Adaptive globalData.defaultStability
             if (lastReps === 1 && lastLapses === 0) {
                 globalData.stabilityDataArry.push({
-                    interval: interval,
-                    retrievability: grade === "0" ? 0 : 1
+                    interval: cardData.interval,
+                    retrievability: grade === 0 ? 0 : 1
                 });
 
                 if (globalData.stabilityDataArry.length > 0 && globalData.stabilityDataArry.length % 50 === 0) {

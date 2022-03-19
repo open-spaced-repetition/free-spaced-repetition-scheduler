@@ -1,6 +1,6 @@
 {
     "name": "fsrs.js",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "FSRS (free spaced repetition scheduler) algorithm, based on the DSR model proposed by Piotr Wozniak, author of SuperMemo",
     "main": "fsrs.js",
     "scripts": {
