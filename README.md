@@ -50,7 +50,7 @@
 
 ## 有现成的算法库吗？
 
-钓鱼插件实现了该算法的 JavaScript 版本：[fishing/action-fishing.js](https://github.com/oflg/fishing/blob/master/action-fishing.js)，本项目中的 simulator.py 中实现了 Python 版本。
+钓鱼插件实现了该算法的 JavaScript 版本：[fishing/macros/fsrs.js](https://github.com/oflg/fishing/blob/95ac3b2d0a070c79b65eb87ce5d47f1bd7824f92/macros/fsrs.js)，本项目中的 simulator.py 中实现了 Python 版本。
 
 该算法尚未稳定，还有待收集数据验证。很多参数是人工设置的，尚未实现自适应，所以目前没有提供算法库。
 
