@@ -1,0 +1,3 @@
+[submodule "fsrs.js"]
+	path = fsrs.js
+	url = git@github.com:open-spaced-repetition/fsrs.js.git
