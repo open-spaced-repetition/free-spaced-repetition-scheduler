@@ -10,7 +10,7 @@ Meanwhile, spaced repetition is one essential technology to achieve free learnin
 
 FSRS runs entirely locally and has no risk under others' control.
 
-## What is the principle of the algorithm?
+## What is the principle of FSRS?
 
 FSRS is based on the [DSR](https://supermemo.guru/wiki/Two_components_of_memory) model proposed by [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak), the author of SuperMemo.
 
@@ -24,7 +24,7 @@ In the present model, the following memory laws are considered:
 - The higher the stability, the lower the stability increase (also known as [stabilization decay](https://supermemo.guru/wiki/Stabilization_decay))
 - The lower the retrievability, the higher the stability increase (also known as [stabilization curve](https://supermemo.guru/wiki/Stabilization_curve))
 
-## Can you briefly describe the algorithm?
+## Can you briefly describe FSRS?
 
 - Difficulty range - $D\in [1,10]$
 - Initial difficulty - $D_0 = 5$
@@ -52,12 +52,12 @@ In the present model, the following memory laws are considered:
   - Current recall rate - $R_c$
   - If $R_c < R_t$, increase the initial difficulty so that the growth rate of the review interval for new cards decreases, and vice versa
 
-## Have a library of the algorithm?
+## Have a library of FSRS?
 
-The fishing plugin implements a JavaScript version of the algorithm: [fishing/macros/fsrs.js](https://github.com/oflg/fishing/blob/95ac3b2d0a070c79b65eb87ce5d47f1bd7824f92/macros/fsrs.js), and the Python version is implemented in simulator.py in this repository.
+The fishing plugin implements a JavaScript version of FSRS: [fishing/macros/fsrs.js](https://github.com/oflg/fishing/blob/95ac3b2d0a070c79b65eb87ce5d47f1bd7824f92/macros/fsrs.js), and the Python version is implemented in simulator.py in this repository.
 
-The algorithm is not yet stable and has yet to be verified by collecting data. Many parameters are set manually and are not yet adaptable, so there is no library available for the algorithm in other programming languages.
+FSRS is not yet stable and has yet to be verified by collecting data. Many parameters are set manually and are not yet adaptable, so there is no library available for FSRS in other programming languages.
 
-## Can I use this algorithm?
+## Can I use FSRS in my software?
 
 Yes, please link to this [repository](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler).
