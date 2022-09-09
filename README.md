@@ -30,7 +30,7 @@ In the present model, the following memory laws are considered:
 - Initial difficulty - $D_0 = 5$
 - Initial stability - $S_0 = 2$
 - Exponential forgetting curve model - $R = \exp(\ln 0.9 \cdot \cfrac{I}{S})$
-- Stability updating formula after successful review - $S^\prime = S\cdot (1 + a \times D ^ {-b} \times S^{-c} \times (\exp(1 - R)-1)$)
+- Stability updating formula after successful review - $S^\prime = S\cdot (1 + a \times D ^ {-b} \times S^{-c} \times (\exp(1 - R)-1))$
   - Stability increase coefficient - a = 60
   - Difficulty decay coefficient - b = 0.7
   - Stability decay coefficient - c = 0.2
@@ -44,8 +44,7 @@ In the present model, the following memory laws are considered:
     - 2 indicates so easy (successful review without effort)
   - Grading influence coefficient - d = 1
   - Retrievability influence coefficient - e = 1
-- Adaptive initial stability  - $S_0 = \cfrac{\ln 0.9}{\cfrac{\sum\limits_i^n \ln R_i \times I_i\times cnt_i}{\sum\limits_i^n I_i^2\times
-  cnt_i}}$
+- Adaptive initial stability  - $S_0 = \cfrac{\ln 0.9}{\cfrac{\sum_i^n \ln R_i \times I_i\times cnt_i}{\sum\limits_i^n I_i^2\times cnt_i}}$
     - A linear regression of the first review to the forgetting curve is performed to calculate the actual stability.
 - Adaptive initial difficulty $D_0 = \cfrac{\ln R_t}{\ln R_c}^{\frac{1}{-b}} \times D_0$
   - Requested recall rate - $R_t$
