@@ -10,7 +10,7 @@
 
 ## 算法的原理是什么？
 
-本算法基于 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Two_components_of_memory)开发。
+本算法基于 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Two_components_of_memory)开发。FSRS 在此基础上，根据论文 *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://dl.acm.org/doi/10.1145/3534678.3539081)* 中的 DHP 模型进行改进。
 
 该模型考虑了影响记忆的三个变量：难度（difficulty），稳定性（stability）和可提取性（retrievability）。
 
@@ -52,7 +52,7 @@
 
 ## 有现成的算法库吗？
 
-钓鱼插件实现了该算法的 JavaScript 版本：[fishing/macros/fsrs.js](https://github.com/oflg/fishing/blob/95ac3b2d0a070c79b65eb87ce5d47f1bd7824f92/macros/fsrs.js)，本项目中的 simulator.py 中实现了 Python 版本。
+太微的钓鱼插件实现了该算法的 JavaScript 版本：[fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)，本项目中的 simulator.py 中实现了 Python 版本。Go 版本在 [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)。为 Anki 特制的简化版在 [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)。
 
 该算法尚未稳定，还有待收集数据验证。很多参数是人工设置的，尚未实现自适应，所以目前没有提供算法库。
 

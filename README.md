@@ -4,7 +4,7 @@
 
 ## What does the 'Free' mean in the name?
 
-The algorithm (FSRS) supports reviewing in advance or delay. It's free for users to decide the time of review. And it will adapt to the users' memory.
+The algorithm (FSRS) supports reviewing in advance or delay. It's free for users to decide the time of review. And it will adapt to the user's memory.
 
 Meanwhile, spaced repetition is one essential technology to achieve free learning. 
 
@@ -12,11 +12,11 @@ FSRS runs entirely locally and has no risk under others' control.
 
 ## What is the principle of FSRS?
 
-FSRS is based on the [DSR](https://supermemo.guru/wiki/Two_components_of_memory) model proposed by [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak), the author of SuperMemo. FSRS is improved with DHP model introduced in the paper: *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://dl.acm.org/doi/10.1145/3534678.3539081)*.
+FSRS is based on the [DSR](https://supermemo.guru/wiki/Two_components_of_memory) model proposed by [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak), the author of SuperMemo. FSRS is improved with the DHP model introduced in the paper: *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://dl.acm.org/doi/10.1145/3534678.3539081)*.
 
 The model considers three variables that affect memory: difficulty, stability, and retrievability.
 
-Stability refers to the storage strength of memory; the higher it is, the slower it is forgotten. Retrievability refers to the retrieval strength of memory; the lower it is, the higher the probability that the memory will be forgotten.
+Stability refers to the storage strength of memory; the higher it is, the slower it is forgotten. Retrievability refers to memory's retrieval strength; the lower it is, the higher the probability that the memory will be forgotten.
 
 In the present model, the following memory laws are considered:
 
@@ -53,7 +53,7 @@ In the present model, the following memory laws are considered:
 
 ## Have a library of FSRS?
 
-The fishing plugin implements a JavaScript version of FSRS: [fishing/macros/fsrs.js](https://github.com/oflg/fishing/blob/95ac3b2d0a070c79b65eb87ce5d47f1bd7824f92/macros/fsrs.js), and the Python version is implemented in simulator.py in this repository.
+The fishing plugin of tiddlywiki implements a JavaScript version of FSRS: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js) and the Python version is implemented in simulator.py in this repository. The Go version is at [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs). And the simplified version for Anki is at [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki).
 
 FSRS is not yet stable and has yet to be verified by collecting data. Many parameters are set manually and are not yet adaptable, so there is no library available for FSRS in other programming languages.
 
