@@ -10,7 +10,7 @@
 
 ## 算法的原理是什么？
 
-本算法基于 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Two_components_of_memory)开发。FSRS 在此基础上，根据论文 *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://dl.acm.org/doi/10.1145/3534678.3539081)* 中的 DHP 模型进行改进。
+本算法基于 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Two_components_of_memory)开发。FSRS 在此基础上，根据论文 *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://www.maimemo.com/paper/)* 中的 DHP 模型进行改进。
 
 该模型考虑了影响记忆的三个变量：难度（difficulty），稳定性（stability）和可提取性（retrievability）。
 
