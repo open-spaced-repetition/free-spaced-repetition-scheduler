@@ -26,37 +26,8 @@ In the present model, the following memory laws are considered:
 
 ## Can you briefly describe FSRS?
 
-- Difficulty range - $D\in [1,10]$
-- Initial difficulty - $D_0 = 5$
-- Initial stability - $S_0 = 2$
-- Exponential forgetting curve model - $R = \exp(\ln 0.9 \cdot \cfrac{I}{S})$
-- Stability updating formula after successful review - $S^\prime = S\cdot (1 + a \times D ^ {-b} \times S^{-c} \times (\exp(1 - R)-1))$
-  - Stability increase coefficient - a = 60
-  - Difficulty decay coefficient - b = 0.7
-  - Stability decay coefficient - c = 0.2
-- Stability after failed review - $S_{L} = S_0^{-f\cdot L}$
-  - Number of lapses - $L >= 0$
-  - Forgetting decay coefficient - f = 0.3
-- Difficulty updating formula after review - $D^\prime = D - d\cdot(Grade - 1) - e\cdot(1-R)$
-  - Rating range - $Grade\in \{0,1,2\}$
-    - 0 means forgetting (failed review)
-    - 1 indicates remembered (successful review)
-    - 2 indicates so easy (successful review without effort)
-  - Grading influence coefficient - d = 1
-  - Retrievability influence coefficient - e = 1
-- Adaptive initial stability  - $S_0 = \cfrac{\ln 0.9}{\cfrac{\sum_i^n \ln R_i \times I_i\times cnt_i}{\sum\limits_i^n I_i^2\times cnt_i}}$
-    - A linear regression of the first review to the forgetting curve is performed to calculate the actual stability.
-- Adaptive initial difficulty $D_0 = \cfrac{\ln R_t}{\ln R_c}^{\frac{1}{-b}} \times D_0$
-  - Requested recall rate - $R_t$
-  - Current recall rate - $R_c$
-  - If $R_c < R_t$, increase the initial difficulty so that the growth rate of the review interval for new cards decreases, and vice versa
+The formula of memory on FSRS: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Free-Spaced-Repetition-Scheduler)
 
 ## Have a library of FSRS?
 
-The fishing plugin of tiddlywiki implements a JavaScript version of FSRS: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js) and the Python version is implemented in simulator.py in this repository. The Go version is at [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs). And the simplified version for Anki is at [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki).
-
-FSRS is not yet stable and has yet to be verified by collecting data. Many parameters are set manually and are not yet adaptable, so there is no library available for FSRS in other programming languages.
-
-## Can I use FSRS in my software?
-
-Yes, please link to this [repository](https://github.com/open-spaced-repetition/free-spaced-repetition-scheduler).
+The fishing plugin of tiddlywiki implements a JavaScript version of FSRS: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js) and the Python version is implemented in simulator.py in this repository. The Golang version is at [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs). And the add-on version for Anki is at [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki).
