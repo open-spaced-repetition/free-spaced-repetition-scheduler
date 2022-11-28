@@ -28,4 +28,7 @@ FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open
 
 ## 有现成的算法库吗？
 
-太微的钓鱼插件实现了该算法的 JavaScript 版本：[fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)，本项目中的 simulator.py 中实现了 Python 版本。Golang 版本在 [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)。为 Anki 特制的插件版在 [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)。
+- Anki 自定义调度（稳定）: [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
+- Go module（重构中）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- Python package（开发中）: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- JS module（待重构）: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)

@@ -7,3 +7,6 @@
 [submodule "go-fsrs"]
 	path = go-fsrs
 	url = https://github.com/open-spaced-repetition/go-fsrs
+[submodule "py-fsrs"]
+	path = py-fsrs
+	url = https://github.com/open-spaced-repetition/py-fsrs

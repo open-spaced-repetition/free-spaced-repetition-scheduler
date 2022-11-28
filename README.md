@@ -30,4 +30,7 @@ The formula of memory on FSRS: [Free Spaced Repetition Scheduler](https://github
 
 ## Have a library of FSRS?
 
-The fishing plugin of tiddlywiki implements a JavaScript version of FSRS: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js) and the Python version is implemented in simulator.py in this repository. The Golang version is at [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs). And the add-on version for Anki is at [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki).
+- Anki custom scheduling (stable): [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
+- Go module (in refactor): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- Python package (in development): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- JS module (need refactor): [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
