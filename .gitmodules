@@ -1,6 +1,6 @@
 [submodule "fsrs.js"]
 	path = fsrs.js
-	url = git@github.com:open-spaced-repetition/fsrs.js.git
+	url = https://github.com/open-spaced-repetition/fsrs.js.git
 [submodule "fsrs4anki"]
 	path = fsrs4anki
 	url = https://github.com/open-spaced-repetition/fsrs4anki
