@@ -31,6 +31,7 @@ The formula of memory on FSRS: [Free Spaced Repetition Scheduler](https://github
 ## Have a library of FSRS?
 
 - Anki custom scheduling (stable): [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- Go module (in refactor): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
-- Python package (in development): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- Go module (beta): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- RemNote plugin (beta): [fsrs4remnote](https://github.com/open-spaced-repetition/fsrs4remnote)
+- Python package (alpha): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
 - JS module (need refactor): [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)

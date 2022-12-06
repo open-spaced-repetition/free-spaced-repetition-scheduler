@@ -29,6 +29,7 @@ FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open
 ## 有现成的算法库吗？
 
 - Anki 自定义调度（稳定）: [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- Go module（重构中）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
-- Python package（开发中）: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- Go module（beta）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- RemNote plugin (beta): [fsrs4remnote](https://github.com/open-spaced-repetition/fsrs4remnote)
+- Python package（alpha）: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
 - JS module（待重构）: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
