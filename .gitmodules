@@ -13,3 +13,6 @@
 [submodule "fsrs4remnote"]
 	path = fsrs4remnote
 	url = https://github.com/open-spaced-repetition/fsrs4remnote
+[submodule "rs-fsrs"]
+	path = rs-fsrs
+	url = https://github.com/open-spaced-repetition/rs-fsrs
