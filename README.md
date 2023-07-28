@@ -26,12 +26,12 @@ In the present model, the following memory laws are considered:
 
 ## Can you briefly describe FSRS?
 
-The formula of memory on FSRS: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Free-Spaced-Repetition-Scheduler)
+The formula of memory on FSRS: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Algorithm)
 
 ## Have a library of FSRS?
 
 - Anki custom scheduling (stable): [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- Go module (beta): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- JS module (stable): [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
+- Go module (stable): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
 - RemNote plugin (beta): [fsrs4remnote](https://github.com/open-spaced-repetition/fsrs4remnote)
-- Python package (alpha): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
-- JS module (need refactor): [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
+- Python package (beta): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)

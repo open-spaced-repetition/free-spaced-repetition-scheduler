@@ -24,12 +24,12 @@
 
 ## 能简单描述一下算法吗？
 
-FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Free-Spaced-Repetition-Scheduler)
+FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Algorithm)
 
 ## 有现成的算法库吗？
 
 - Anki 自定义调度（稳定）: [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- Go module（beta）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+- JS module（稳定）: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
+- Go module（稳定）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
 - RemNote plugin (beta): [fsrs4remnote](https://github.com/open-spaced-repetition/fsrs4remnote)
-- Python package（alpha）: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
-- JS module（待重构）: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
+- Python package (beta): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)

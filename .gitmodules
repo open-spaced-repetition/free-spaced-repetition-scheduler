@@ -16,3 +16,6 @@
 [submodule "rs-fsrs"]
 	path = rs-fsrs
 	url = https://github.com/open-spaced-repetition/rs-fsrs
+[submodule "cljc-fsrs"]
+	path = cljc-fsrs
+	url = https://github.com/open-spaced-repetition/cljc-fsrs.git
