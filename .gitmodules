@@ -19,3 +19,9 @@
 [submodule "cljc-fsrs"]
 	path = cljc-fsrs
 	url = https://github.com/open-spaced-repetition/cljc-fsrs.git
+[submodule "fsrs-optimizer-py"]
+	path = fsrs-optimizer-py
+	url = https://github.com/open-spaced-repetition/fsrs-optimizer.git
+[submodule "fsrs-optimizer-rs"]
+	path = fsrs-optimizer-rs
+	url = https://github.com/open-spaced-repetition/fsrs-optimizer-burn.git
