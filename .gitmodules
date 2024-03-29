@@ -10,9 +10,6 @@
 [submodule "py-fsrs"]
 	path = py-fsrs
 	url = https://github.com/open-spaced-repetition/py-fsrs
-[submodule "fsrs4remnote"]
-	path = fsrs4remnote
-	url = https://github.com/open-spaced-repetition/fsrs4remnote
 [submodule "rs-fsrs"]
 	path = rs-fsrs
 	url = https://github.com/open-spaced-repetition/rs-fsrs
