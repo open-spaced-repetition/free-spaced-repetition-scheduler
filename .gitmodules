@@ -25,3 +25,6 @@
 [submodule "fsrs-optimizer-rs"]
 	path = fsrs-optimizer-rs
 	url = https://github.com/open-spaced-repetition/fsrs-optimizer-burn.git
+[submodule "ts-fsrs"]
+	path = ts-fsrs
+	url = https://github.com/open-spaced-repetition/ts-fsrs.git
