@@ -22,3 +22,6 @@
 [submodule "ts-fsrs"]
 	path = ts-fsrs
 	url = https://github.com/open-spaced-repetition/ts-fsrs.git
+[submodule "dart-fsrs"]
+	path = dart-fsrs
+	url = https://github.com/open-spaced-repetition/dart-fsrs
