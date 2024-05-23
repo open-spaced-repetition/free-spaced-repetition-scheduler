@@ -30,9 +30,19 @@ The formula of memory on FSRS: [The Algorithm](https://github.com/open-spaced-re
 
 ## Have a library of FSRS?
 
-- Anki custom scheduling (stable): [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- RS crate (stable): [fsrs-rs](https://github.com/open-spaced-repetition/fsrs-rs)
-  - run fsrs-rs in the browser: [fsrs-browser](https://github.com/open-spaced-repetition/fsrs-browser)
-- TS module (stable): [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs)
-- Go module (stable): [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
-- Python package (beta): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- Scheduler:
+  - TypeScipt module: [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs)
+  - Golang module: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+  - Python package: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+  - Rust crate: [rs-fsrs](https://github.com/open-spaced-repetition/rs-fsrs)
+  - Clojure library: [cljc-fsrs](https://github.com/open-spaced-repetition/cljc-fsrs)
+  - Dart package: [dart-fsrs](https://github.com/open-spaced-repetition/dart-fsrs)
+  - Ruby gem: [rb-fsrs](https://github.com/open-spaced-repetition/rb-fsrs)
+  - Swift package: [swift-fsrs](https://github.com/open-spaced-repetition/swift-fsrs)
+  - Android library: [android-fsrs](https://github.com/open-spaced-repetition/android-fsrs)
+  - Exlixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
+
+- Optimizer:
+  - Python package (stable): [fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer)
+  - RS crate (stable): [fsrs-rs](https://github.com/open-spaced-repetition/fsrs-rs)
+    - run fsrs-rs in the browser: [fsrs-browser](https://github.com/open-spaced-repetition/fsrs-browser)
