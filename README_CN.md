@@ -4,9 +4,11 @@
 
 ## 名称中的「自由」是什么意思？
 
-本算法支持自由复习，可以提前，也可以推迟，算法会根据记忆模型进行适应。
+FSRS 支持自由复习，可以提前，也可以推迟，算法会根据记忆模型进行适应。
 
-同时，间隔重复是实现自由学习的基础技术之一。而且算法可以在本地运行，无需担心泄露自己的学习数据。
+同时，间隔重复是实现自由学习的基础技术之一。
+
+FSRS 可以在本地运行，无需担心泄露自己的学习数据。
 
 ## 算法的原理是什么？
 
@@ -28,8 +30,19 @@ FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open
 
 ## 有现成的算法库吗？
 
-- Anki 自定义调度（稳定）: [fsrs4anki](https://github.com/open-spaced-repetition/fsrs4anki)
-- JS module（稳定）: [fsrs.js](https://github.com/open-spaced-repetition/fsrs.js)
-- Go module（稳定）: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
-- RemNote plugin (beta): [fsrs4remnote](https://github.com/open-spaced-repetition/fsrs4remnote)
-- Python package (beta): [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+- 调度器:
+  - TypeScipt module: [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs)
+  - Golang module: [go-fsrs](https://github.com/open-spaced-repetition/go-fsrs)
+  - Python package: [py-fsrs](https://github.com/open-spaced-repetition/py-fsrs)
+  - Rust crate: [rs-fsrs](https://github.com/open-spaced-repetition/rs-fsrs)
+  - Clojure library: [cljc-fsrs](https://github.com/open-spaced-repetition/cljc-fsrs)
+  - Dart package: [dart-fsrs](https://github.com/open-spaced-repetition/dart-fsrs)
+  - Ruby gem: [rb-fsrs](https://github.com/open-spaced-repetition/rb-fsrs)
+  - Swift package: [swift-fsrs](https://github.com/open-spaced-repetition/swift-fsrs)
+  - Android library: [android-fsrs](https://github.com/open-spaced-repetition/android-fsrs)
+  - Exlixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
+
+- 优化器:
+  - Python package (stable): [fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer)
+  - RS crate (stable): [fsrs-rs](https://github.com/open-spaced-repetition/fsrs-rs)
+    - run fsrs-rs in the browser: [fsrs-browser](https://github.com/open-spaced-repetition/fsrs-browser)
