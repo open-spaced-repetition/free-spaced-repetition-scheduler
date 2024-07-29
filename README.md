@@ -40,7 +40,7 @@ The formula of memory on FSRS: [The Algorithm](https://github.com/open-spaced-re
   - Ruby gem: [rb-fsrs](https://github.com/open-spaced-repetition/rb-fsrs)
   - Swift package: [swift-fsrs](https://github.com/open-spaced-repetition/swift-fsrs)
   - Android library: [android-fsrs](https://github.com/open-spaced-repetition/android-fsrs)
-  - Exlixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
+  - Elixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
 
 - Optimizer:
   - Python package (stable): [fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer)
