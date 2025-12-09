@@ -12,7 +12,7 @@ FSRS runs entirely locally and has no risk under others' control.
 
 ## What is the principle of FSRS?
 
-FSRS is based on the [DSR](https://supermemo.guru/wiki/Two_components_of_memory) model proposed by [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak), the author of SuperMemo. FSRS is improved with the DHP model introduced in the paper: *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://www.maimemo.com/paper/)*.
+FSRS springs from [MaiMemo's DHP model](https://www.maimemo.com/paper/) ([中文介绍](https://memodocs.maimemo.com/docs/2022_KDD)), which is a variant of the [DSR model](https://supermemo.guru/wiki/Three_component_model_of_memory) proposed by [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak).
 
 The model considers three variables that affect memory: difficulty, stability, and retrievability.
 
