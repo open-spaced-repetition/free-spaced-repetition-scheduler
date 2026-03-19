@@ -26,7 +26,7 @@ In the present model, the following memory laws are considered:
 
 ## Can you briefly describe FSRS?
 
-The formula of memory on FSRS: [The Algorithm](https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Algorithm)
+The formula of memory on FSRS: [The Algorithm](https://github.com/open-spaced-repetition/awesome-fsrs/wiki/The-Algorithm)
 
 ## Have a library of FSRS?
 
