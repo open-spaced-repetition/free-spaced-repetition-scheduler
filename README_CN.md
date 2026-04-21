@@ -8,11 +8,11 @@ FSRS 支持自由复习，可以提前，也可以推迟，算法会根据记忆
 
 同时，间隔重复是实现自由学习的基础技术之一。
 
-FSRS 可以在本地运行，无需担心泄露自己的学习数据。
+FSRS 完全在本地运行，不存在被他人控制的风险。
 
 ## 算法的原理是什么？
 
-本算法基于 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Two_components_of_memory)开发。FSRS 在此基础上，根据论文 *[A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling](https://www.maimemo.com/paper/)* 中的 DHP 模型进行改进。
+FSRS 源于 [麦莫背单词的 DHP 模型](https://www.maimemo.com/paper/)（[中文介绍](https://memodocs.maimemo.com/docs/2022_KDD)），它是 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Three_component_model_of_memory) 的一个变体。
 
 该模型考虑了影响记忆的三个变量：难度（difficulty），稳定性（stability）和可提取性（retrievability）。
 
@@ -26,7 +26,7 @@ FSRS 可以在本地运行，无需担心泄露自己的学习数据。
 
 ## 能简单描述一下算法吗？
 
-FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open-spaced-repetition/fsrs4anki/wiki/The-Algorithm)
+FSRS 的记忆公式: [The Algorithm](https://github.com/open-spaced-repetition/awesome-fsrs/wiki/The-Algorithm)
 
 ## 有现成的算法库吗？
 
@@ -40,7 +40,7 @@ FSRS 的记忆公式: [Free Spaced Repetition Scheduler](https://github.com/open
   - Ruby gem: [rb-fsrs](https://github.com/open-spaced-repetition/rb-fsrs)
   - Swift package: [swift-fsrs](https://github.com/open-spaced-repetition/swift-fsrs)
   - Android library: [android-fsrs](https://github.com/open-spaced-repetition/android-fsrs)
-  - Exlixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
+  - Elixir library: [ex_fsrs](https://github.com/open-spaced-repetition/ex_fsrs)
 
 - 优化器:
   - Python package (stable): [fsrs-optimizer](https://github.com/open-spaced-repetition/fsrs-optimizer)
