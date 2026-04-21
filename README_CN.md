@@ -12,7 +12,7 @@ FSRS 完全在本地运行，不存在被他人控制的风险。
 
 ## 算法的原理是什么？
 
-FSRS 源于 [麦莫背单词的 DHP 模型](https://www.maimemo.com/paper/)（[中文介绍](https://memodocs.maimemo.com/docs/2022_KDD)），它是 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Three_component_model_of_memory) 的一个变体。
+FSRS 源于 [墨墨背单词的 DHP 模型](https://www.maimemo.com/paper/)（[中文介绍](https://memodocs.maimemo.com/docs/2022_KDD)），它是 SuperMemo 作者 [Piotr Wozniak](https://supermemo.guru/wiki/Piotr_Wozniak) 提出的 [DSR 模型](https://supermemo.guru/wiki/Three_component_model_of_memory) 的一个变体。
 
 该模型考虑了影响记忆的三个变量：难度（difficulty），稳定性（stability）和可提取性（retrievability）。
 
